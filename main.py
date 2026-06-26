@@ -33,10 +33,15 @@ async def panel(ctx):
     # R
     embed.set_image(url="RESİM_LİNKİ")
 
-    button = Button(
+    
         label="🎫 Ticket Aç",
         style=discord.ButtonStyle.green
-    )embed.set_image(url="RESİM_LİNKİ")
+embed.set_image(url="RESİM_LİNKİ")
+
+
+    label="🎫 Ticket Aç",
+    style=discord.ButtonStyle.green
+)
 
     async def button_callback(interaction):
         await interaction.response.send_message(
