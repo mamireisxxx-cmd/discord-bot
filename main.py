@@ -1,5 +1,6 @@
-from discord.ui import Button, Viewimport discord
+import discord
 from discord.ext import commands
+from discord.ui import Button, View
 import os
 
 intents = discord.Intents.default()
@@ -29,13 +30,13 @@ async def panel(ctx):
         color=0x8000ff
     )
 
-    # BUhttps://cdn.discordapp.com/attachments/1518272990016700439/1519850091207196843/992C4317-FE10-45D6-8FD8-5EB37AD86DA3.png?ex=6a3fb6f3&is=6a3e6573&hm=674e8f2d7fd61042801e02a45719dc6247a030bb076a6b3bbf8659b90b0ef18f&RAYA KENDİ RESMİNİN LİNKİNİ YAPIŞTIR
+    # R
     embed.set_image(url="RESİM_LİNKİ")
 
     button = Button(
         label="🎫 Ticket Aç",
         style=discord.ButtonStyle.green
-    )
+    )embed.set_image(url="RESİM_LİNKİ")
 
     async def button_callback(interaction):
         await interaction.response.send_message(
